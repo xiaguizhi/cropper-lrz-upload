@@ -1,6 +1,6 @@
 # upload
 
-> A Vue.js project
+> vue移动端图片裁剪、压缩后上传
 
 ## Build Setup
 
