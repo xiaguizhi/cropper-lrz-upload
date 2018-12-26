@@ -103,7 +103,7 @@ export default {
       }).then(rst => {
         // 压缩后返回的图片为base64格式，用rst.base64获取
         if (!this.isApi) {
-          // 注意因为无可用的上传图片接口，在此处打断了模拟效果！！！
+          // 注意因为无可用的上传图片接口，在此处打断并模拟上传效果！！！
           setTimeout(() => {
             this.cancelHandle();
             this.imgUrl = rst.base64;
