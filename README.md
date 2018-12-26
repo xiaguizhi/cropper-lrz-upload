@@ -1,6 +1,7 @@
 # upload
 
 > vue移动端图片裁剪、压缩后上传
+> demo路径：src/pages/upload/upload.vue
 
 ## Build Setup
 
