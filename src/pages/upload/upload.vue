@@ -170,7 +170,7 @@ export default {
   width: 50%;
   height: 60px;
   text-align: center;
-  padding: 0.1rem 0;
+  padding: 10px 0;
   z-index: 999;
   background-color: #fff;
 }
