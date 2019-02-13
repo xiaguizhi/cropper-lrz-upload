@@ -1,46 +1,65 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <div class="tab_list">
+      <div>
+        <router-link to="/" class="tab">移动端上传文件</router-link>
+      </div>
+      <div>
+        <router-link to="/myUpload" class="tab">上传文件组件</router-link>
+      </div>
+      <div>
+        <router-link to="/square" class="tab">动画</router-link>
+      </div>
+    </div>
+    <div class="view">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app',
-  data () {
-    return {
-      
-    }
+  name: "app",
+  data() {
+    return {};
   }
-}
+};
 </script>
 
 <style lang="scss">
 @import "./assets/plugins/cropper/css/cropper.min.css";
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  display: flex;
 }
 
-h1, h2 {
-  font-weight: normal;
+.tab_list {
+  width: 20%;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
+.tab {
+  text-decoration: none;
+  background-color: #bfefff;
+  color: #fff;
   display: inline-block;
-  margin: 0 10px;
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  border-radius: 5px;
 }
 
-a {
-  color: #42b983;
+.tab:hover {
+  background-color: #eed8ae;
+}
+
+.view {
+  width: 80%;
+  padding: 10px;
 }
 </style>
