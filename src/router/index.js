@@ -14,7 +14,7 @@ export default new Router({
     },
     {
       path: "/square",
-      component: resolve => require(['../pages/animation/square.vue'], resolve), // 上传图片组件
+      component: resolve => require(['../pages/animation/square.vue'], resolve), // 动画组件
     }
   ]
 })

@@ -11,7 +11,7 @@
         @change="upload"
       >
       <!-- 上传的按钮 -->
-      <button @click="uploadClick">上传图片</button>
+      <button class="upload-button" @click="uploadClick">上传图片</button>
       <!-- 图片预览 -->
       <img :src="imgUrl " alt ref="image">
     </div>
@@ -158,6 +158,13 @@ export default {
 <style scoped>
 .upload {
   display: none;
+}
+.upload-button {
+  background-color: #bfefff;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
 .cropper-box {
   width: 50%;
